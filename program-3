@@ -1,0 +1,29 @@
+#include<iostream>
+using namespace std;
+double power(double m, int n=2);
+int main()
+{int n ;
+double m;
+cout<<"enter base:";
+cin>>m;
+cout<<"enter power:";
+cin>>n;
+double result , result2;
+cout<<"\n when n value is given:";
+result=power(m,n);
+cout<<"\n result is:"<<result;
+cout<<"\n n value not given:";
+result2=power(m);
+cout<<"\n result is:"<<result2;
+}
+double power(double m ,int n)
+{
+       double x=1.0;
+       if (m==0.0)
+       cout<<"not possible";
+    if (n==0)
+    return 1;
+    else for (int i=1;i<=n;i++)
+     x=x*m;
+return x;     
+}
